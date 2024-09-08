@@ -1,0 +1,61 @@
+body{
+    background-color: #111;
+}
+#img_logo{
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    
+}
+#talk_btn:hover{
+    box-shadow: 1px 3px 7px black inset;
+    transition: .5s ease-in-out;
+}
+#talk_btn:hover img{
+    flex-direction: row-reverse;
+    transition: .5s ease-in-out;
+    transform:rotateZ(360deg)
+}
+
+#section_1{
+    background-image: url("https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2023/05/23163145/modern-office-interior-design-with-partition-plants.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24rem ;
+}
+
+/* #section_2{
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/67/00/29/1000_F_167002974_jFeFiLw39C9bfLbtOXWQlqHrvodslbZL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+} */
+.card{
+    width: 17%;
+    height: 12rem;
+    border-radius: 1rem;
+    transition: all .8s ease-in-out;
+}
+.active{
+    width: 30%;
+    height: 18rem;
+}
+.banner{
+    transition: all .8s ease-in-out;
+}
+
+.active .banner{
+    flex-direction: row;
+    font-size: small;
+    
+}
+
+.active #content{
+    height: 30vh;
+}
+
+#content{
+    height: 0vh;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+}
